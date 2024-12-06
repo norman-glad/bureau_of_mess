@@ -1,0 +1,21 @@
+package exercise1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account acc = new Account (777);
+		
+		List<Transaction> Trans = new ArrayList<>(); 
+		Trans.add(new Transaction(acc, true, 999));   // Deposit
+		Trans.add(new Transaction(acc, true, 888));  
+		Trans.add(new Transaction(acc, true, 777));   // Insufficient withdrawal
+		Trans.add(new Transaction(acc, false, 666));  // Withdraw 
+		Trans.add(new Transaction(acc, false, 555)); 
+
+	}
+
+}

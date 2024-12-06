@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\norma\Github_repos\bureau_of_mess\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3180376251.index
+1288848795.index
