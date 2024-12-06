@@ -103,13 +103,18 @@ public class fibonacci extends JFrame {
 			// TODO Auto-generated method stub
 			List<Integer> fibSeries = new ArrayList<>();
 			int a = 0, b = 1;
+			fibSeries.add(a);
+			publish(a);
+			Thread.sleep(2000);
+
 
 			for (int i = 0; i < count; i++) {
 				fibSeries.add(b);
+				publish(b);
 				int temp = a + b;
 				a = b;
 				b = temp;
-				publish(b);
+
 				Thread.sleep(2000);
 			}
 
