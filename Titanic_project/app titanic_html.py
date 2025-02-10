@@ -37,14 +37,16 @@ if __name__ == '__main__':
     try:
         port = int(sys.argv[1]) # This is for a command-line input
     except:
-        port = 12345 # If you don't provide any port the port will be set to 12345
+        port = 6969 # If you don't provide any port the port will be set to 12345
 
-    lr = joblib.load('C:/courses_centennial/COMP 247/Titanic_project/my_model_titanic.pkl') # Load "model.pkl"
+    lr = joblib.load('/home/yiangosa/Documents/GitHub/bureau_of_mess/Titanic_project/my_model_titanic.pkl') # Load "model.pkl"
     print ('Model loaded')
-    pipeline = joblib.load('C:/courses_centennial/COMP 247/Titanic_project/my_pipe_titanic.pkl')
+    pipeline = joblib.load('/home/yiangosa/Documents/GitHub/bureau_of_mess/Titanic_project/my_pipe_titanic.pkl')
     print ('Pipeline loaded')
-    scalar = joblib.load('C:/courses_centennial/COMP 247/Titanic_project/my_scalar_titanic.pkl')
+    scalar = joblib.load('/home/yiangosa/Documents/GitHub/bureau_of_mess/Titanic_project/my_scalar_titanic.pkl')
     print ('scalar loaded')
     
     
     app.run(port=port, debug=True)
+    
+    

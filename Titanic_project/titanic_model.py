@@ -22,7 +22,7 @@ print(df.isnull().sum())
 # or
 print(len(df) - df.count())
 # Check the strongest relationship with class from numeric fields
-print(df.corr())
+# print(df.corr())
 # Choose columns
 include = ["age", "sex", "embarked", "survived"]
 df_ = df[include]
