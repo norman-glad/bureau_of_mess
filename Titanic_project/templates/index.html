@@ -1,0 +1,45 @@
+<html>
+<head>
+<title> Flask Demo   </title>
+
+</head>
+
+<body>
+
+<h1> Titanic Machine Learning Model Deployment</h1>
+
+<form action="/result" method="post">
+<input id = "age" type="range" min="1" max="118" step="1"
+                       value="10" name = "age" oninput="sepallen_disp.value=age.value" >
+<output id = "sepallen_disp"></output>
+  <label for="sepallen">Age</label>
+ <br><br>
+ <p>Sex </p>
+<select name = "sex">
+<option value = "male"> male</option>
+<option value = "female"> female</option>
+</select>
+<br><br>
+<p>Port of Embarkment </p>
+<select name = "embarked">
+<option value = "S">S</option>
+<option value = "C"> C</option>
+<option value = "Q"> Q</option>
+</select>
+<br><br>
+
+
+<button type ="submit">Predict</button>
+
+<input type ="reset" value="Reset">
+</form>
+
+</body>
+<br><br>
+<br><br>
+<br><br>
+
+<footer>
+	<p>Created by Mayy Habayeb. &copy; 2023</p>
+</footer>
+</html>
